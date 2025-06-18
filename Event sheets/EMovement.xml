@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EMovement</name>
+    <events>
+        <event-block sid="138370031734980">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="780710141885399" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="352761015344217" type="Player">
+                    <param id="0" name="Object">Bullet</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="785489245641933" type="Bullet">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Play" sid="737207824858789" type="Audio">
+                    <param id="0" name="Audio file">laser-312360</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="226016234987614">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="296998339001639" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="987496993982821" type="Player">
+                    <param id="0" name="X">lerp(Player.X, Mouse.X, 0.2)</param>
+                    <param id="1" name="Y">lerp(Player.Y, Mouse.Y, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -455,8 +455,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-96</x>
-                        <y>2208</y>
+                        <x>-352</x>
+                        <y>1664</y>
                         <z>0</z>
                         <width>96</width>
                         <height>992</height>
@@ -482,8 +482,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-768</x>
-                        <y>1920</y>
+                        <x>-1024</x>
+                        <y>1376</y>
                         <z>0</z>
                         <width>96</width>
                         <height>992</height>
@@ -509,8 +509,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1120</x>
-                        <y>3040</y>
+                        <x>864</x>
+                        <y>2496</y>
                         <z>0</z>
                         <width>864</width>
                         <height>32</height>
@@ -536,10 +536,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1120</x>
-                        <y>2720</y>
+                        <x>864</x>
+                        <y>2176</y>
                         <z>0</z>
-                        <width>864</width>
+                        <width>896</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -606,24 +606,6 @@
                     <instance-variables>
                         <vidaplayer>200</vidaplayer>
                     </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>400</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>No</set-angle>
-                                <default-controls>Yes</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="ScrollTo">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -817,6 +799,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="astroboy" uid="70">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>64</x>
+                        <y>896</y>
+                        <z>0</z>
+                        <width>156</width>
+                        <height>213</height>
+                        <depth>0</depth>
+                        <hotspotX>0.506410241</hotspotX>
+                        <hotspotY>0.558685422</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.800000012</opacity>
+                    </world>
+                </instance>
                 <instance type="vidaJefe2" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -907,6 +911,55 @@
                         <y>1952</y>
                         <z>0</z>
                         <width>224</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CuadroDialogo" uid="68">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>256</x>
+                        <y>960</y>
+                        <z>0</z>
+                        <width>576</width>
+                        <height>256</height>
+                        <depth>0</depth>
+                        <hotspotX>0.506849289</hotspotX>
+                        <hotspotY>0.438202262</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.899999976</opacity>
+                    </world>
+                </instance>
+                <instance type="TextoDialogo" uid="69">
+                    <properties>
+                        <text>text</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial Black,-19,900,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>928</y>
+                        <z>0</z>
+                        <width>416</width>
                         <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

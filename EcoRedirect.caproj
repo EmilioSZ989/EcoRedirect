@@ -19,7 +19,6 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -57,14 +56,6 @@
                 <instance-variables>
                     <instance-variable name="vidaplayer" sid="553512827834190" type="number" />
                 </instance-variables>
-                <behaviors>
-                    <behavior-type name="8Direction" sid="905051850146653">
-                        <behavior id="EightDir" />
-                    </behavior-type>
-                    <behavior-type name="ScrollTo" sid="833247850966223">
-                        <behavior id="scrollto" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="vida100" pingpong="0" repeatcount="1" repeatto="0" sid="484409508510349" speed="5">
                         <frame duration="1" hotspotX="0.488372" hotspotY="-0.123596">
@@ -128,7 +119,16 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281462207878539" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.506849" hotspotY="0.438202" original-source="C:\Users\HP\Downloads\pngtree-green-white-pixel-art-text-box-bubble-png-image_6254669-removebg-preview.png">
+                            <collision-poly>
+                                <point x="0.179669" y="0.00668896" />
+                                <point x="0.822695" y="0.0133779" />
+                                <point x="0.995272" y="0.464883" />
+                                <point x="0.780142" y="0.856187" />
+                                <point x="0.229314" y="0.852843" />
+                                <point x="0.00472813" y="0.464883" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -510,6 +510,25 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="astroboy" sid="884792971351478">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="547525175122244" speed="5">
+                    <frame duration="1" hotspotX="0.50641" hotspotY="0.558685" original-source="C:\Users\HP\Downloads\imagen_2025-06-18_160020987-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.826923" y="0.558685" />
+                            <point x="0.705128" y="0.779343" />
+                            <point x="0.50641" y="0.99061" />
+                            <point x="0.25641" y="0.816901" />
+                            <point x="0.217949" y="0.558685" />
+                            <point x="0.0961539" y="0.183099" />
+                            <point x="0.50641" y="0.00938967" />
+                            <point x="0.865385" y="0.220657" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -522,6 +541,7 @@
         <event-sheet>EMovement.xml</event-sheet>
         <event-sheet>EGameOver.xml</event-sheet>
         <event-sheet>EGanaste.xml</event-sheet>
+        <event-sheet>EDialogos.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="19" />

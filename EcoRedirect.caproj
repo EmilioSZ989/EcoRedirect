@@ -510,6 +510,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Texto_Indicacion" sid="295707975214973">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

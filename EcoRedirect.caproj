@@ -19,7 +19,6 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -55,30 +54,52 @@
             <object-type name="Player" sid="625445303424473">
                 <plugin id="Sprite" />
                 <instance-variables>
-                    <instance-variable name="vidaplayer" sid="553512827834190" type="number" />
+                    <instance-variable name="vida" sid="553512827834190" type="number" />
                 </instance-variables>
-                <behaviors>
-                    <behavior-type name="8Direction" sid="905051850146653">
-                        <behavior id="EightDir" />
-                    </behavior-type>
-                    <behavior-type name="ScrollTo" sid="833247850966223">
-                        <behavior id="scrollto" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="vida100" pingpong="0" repeatcount="1" repeatto="0" sid="484409508510349" speed="5">
-                        <frame duration="1" hotspotX="0.488372" hotspotY="-0.123596">
-                            <image-point name="Imagepoint 1" x="0.511628" y="-0.101124" />
+                        <frame duration="1" hotspotX="0.488281" hotspotY="-0.123047">
+                            <image-point name="Imagepoint 1" x="0.472656" y="-0.0957031" />
+                            <collision-poly>
+                                <point x="0.433594" y="0" />
+                                <point x="0.527344" y="0" />
+                                <point x="0.863281" y="0.75" />
+                                <point x="0.101563" y="0.75" />
+                            </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="vida75" pingpong="0" repeatcount="1" repeatto="0" sid="367842607337107" speed="5">
-                        <frame duration="1" hotspotX="0.505882" hotspotY="-0.122222" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.472656" y="-0.0957031" />
+                            <collision-poly>
+                                <point x="0.433594" y="0" />
+                                <point x="0.527344" y="0" />
+                                <point x="0.863281" y="0.75" />
+                                <point x="0.101563" y="0.75" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="vida50" pingpong="0" repeatcount="1" repeatto="0" sid="944765168133400" speed="5">
-                        <frame duration="1" hotspotX="0.494118" hotspotY="-0.0666667" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.472656" y="-0.0957031" />
+                            <collision-poly>
+                                <point x="0.433594" y="0" />
+                                <point x="0.527344" y="0" />
+                                <point x="0.863281" y="0.75" />
+                                <point x="0.101563" y="0.75" />
+                            </collision-poly>
+                        </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="destruida" pingpong="0" repeatcount="1" repeatto="0" sid="370429616970492" speed="5">
-                        <frame duration="1" hotspotX="0.505882" hotspotY="-0.144444" />
+                    <animation framecount="1" loop="0" name="vida25" pingpong="0" repeatcount="1" repeatto="0" sid="370429616970492" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.472656" y="-0.0957031" />
+                            <collision-poly>
+                                <point x="0.433594" y="0" />
+                                <point x="0.527344" y="0" />
+                                <point x="0.863281" y="0.75" />
+                                <point x="0.101563" y="0.75" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>

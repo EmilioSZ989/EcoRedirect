@@ -28,8 +28,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>850</width>
-        <height>1000</height>
+        <width>900</width>
+        <height>1100</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -55,10 +55,11 @@
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="vida" sid="553512827834190" type="number" />
+                    <instance-variable name="velocidadY" sid="535002141172761" type="number" />
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="vida100" pingpong="0" repeatcount="1" repeatto="0" sid="484409508510349" speed="5">
-                        <frame duration="1" hotspotX="0.488281" hotspotY="-0.123047">
+                        <frame duration="1" hotspotX="0.476563" hotspotY="0.433594">
                             <image-point name="Imagepoint 1" x="0.472656" y="-0.0957031" />
                             <collision-poly>
                                 <point x="0.433594" y="0" />
@@ -69,7 +70,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="vida75" pingpong="0" repeatcount="1" repeatto="0" sid="367842607337107" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0.476563" hotspotY="0.433594">
                             <image-point name="Imagepoint 1" x="0.472656" y="-0.0957031" />
                             <collision-poly>
                                 <point x="0.433594" y="0" />
@@ -80,7 +81,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="vida50" pingpong="0" repeatcount="1" repeatto="0" sid="944765168133400" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0.476563" hotspotY="0.433594">
                             <image-point name="Imagepoint 1" x="0.472656" y="-0.0957031" />
                             <collision-poly>
                                 <point x="0.433594" y="0" />
@@ -91,7 +92,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="vida25" pingpong="0" repeatcount="1" repeatto="0" sid="370429616970492" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0.476563" hotspotY="0.433594">
                             <image-point name="Imagepoint 1" x="0.472656" y="-0.0957031" />
                             <collision-poly>
                                 <point x="0.433594" y="0" />
@@ -131,9 +132,59 @@
                 <instance-variables>
                     <instance-variable name="vida" sid="502985056371549" type="number" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Bullet" sid="439141001103050">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983378565373418" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="1" loop="0" name="100hp" pingpong="0" repeatcount="1" repeatto="0" sid="983378565373418" speed="5">
+                        <frame duration="1" hotspotX="0.500586" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.480657" y="0.0210938" />
+                                <point x="0.616647" y="0.0214844" />
+                                <point x="0.705745" y="0.0718751" />
+                                <point x="0.759672" y="0.163281" />
+                                <point x="0.679953" y="0.245703" />
+                                <point x="0.543963" y="0.265625" />
+                                <point x="0.419695" y="0.24585" />
+                                <point x="0.3517" y="0.187012" />
+                                <point x="0.344666" y="0.113086" />
+                                <point x="0.403282" y="0.0589844" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="66hp" pingpong="0" repeatcount="1" repeatto="0" sid="595137977667788" speed="5">
+                        <frame duration="1" hotspotX="0.500586" hotspotY="0.5" original-source="C:\Users\emili\Downloads\Meteorito.png">
+                            <collision-poly>
+                                <point x="0.480657" y="0.0210938" />
+                                <point x="0.616647" y="0.0214844" />
+                                <point x="0.705745" y="0.0718751" />
+                                <point x="0.745604" y="0.155469" />
+                                <point x="0.679953" y="0.245703" />
+                                <point x="0.543963" y="0.265625" />
+                                <point x="0.440797" y="0.2396" />
+                                <point x="0.370457" y="0.187012" />
+                                <point x="0.365768" y="0.103711" />
+                                <point x="0.415006" y="0.0449219" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="33hp" pingpong="0" repeatcount="1" repeatto="0" sid="725492742196282" speed="5">
+                        <frame duration="1" hotspotX="0.500586" hotspotY="0.5" original-source="C:\Users\emili\Downloads\Meteorito.png">
+                            <collision-poly>
+                                <point x="0.400938" y="0.00859375" />
+                                <point x="0.611958" y="0.0199219" />
+                                <point x="0.705745" y="0.0718751" />
+                                <point x="0.759672" y="0.163281" />
+                                <point x="0.677608" y="0.247266" />
+                                <point x="0.560375" y="0.289063" />
+                                <point x="0.436108" y="0.27085" />
+                                <point x="0.325909" y="0.230762" />
+                                <point x="0.279015" y="0.159961" />
+                                <point x="0.314185" y="0.0714844" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -156,10 +207,10 @@
             <object-type name="TextoDialogo" sid="256269596893760">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="TextoObjetivo" sid="568798196671193">
+            <object-type name="txtObjetivo" sid="568798196671193">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="TextoFaltantes" sid="897779535682280">
+            <object-type name="txtFaltantes" sid="897779535682280">
                 <plugin id="Text" />
             </object-type>
         </object-folder>
@@ -534,15 +585,18 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Game.xml</layout>
+        <layout>OneFase.xml</layout>
         <layout>GameOver.xml</layout>
         <layout>Win.xml</layout>
+        <layout>SecondFase.xml</layout>
+        <layout>ThirdFase.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>EGame.xml</event-sheet>
-        <event-sheet>EMovement.xml</event-sheet>
+        <event-sheet>EPlayer.xml</event-sheet>
         <event-sheet>EGameOver.xml</event-sheet>
         <event-sheet>EGanaste.xml</event-sheet>
+        <event-sheet>EMeteorito.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="19" />

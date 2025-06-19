@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EMeteorito</name>
+    <events>
+        <event-block sid="253004997657090">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="258511235395800" type="System">
+                    <param id="0" name="Interval (seconds)">0.3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="766359541146534" type="System">
+                    <param id="0" name="Object to create">Meteorito</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="X">random(0, LayoutWidth)</param>
+                    <param id="3" name="Y">-50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="250788596625256">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="739570435060195" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="997550384630127" type="txtFaltantes">
+                    <param id="0" name="Text">&quot;Faltantes: &quot; &amp; (10 - meteoritosDestruidos)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="720282015053416">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="309018547374896" type="System">
+                    <param id="0" name="Variable">meteoritosDestruidos</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="840115392289221" type="Meteorito" />
+                <action id="-9" name="Set value" sid="189636442512584" type="System">
+                    <param id="0" name="Variable">fase</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="523955773286881" type="Player">
+                    <param id="0" name="Instance variable">velocidadY</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="178978266074349">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="865878253810049" type="Meteorito">
+                    <param id="0" name="Object">Bullet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="703640634467500" type="Meteorito">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="543719804231828" type="Bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="771381239322503">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="354561544926189" type="Meteorito">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="191932195323052" type="Meteorito">
+                    <param id="0" name="Animation">&quot;100hp&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="774348524232982">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="103209056730655" type="Meteorito">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="288761952583413" type="Meteorito">
+                    <param id="0" name="Animation">&quot;66hp&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="741347177476566">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="315426596993790" type="Meteorito">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="814655468410920" type="Meteorito">
+                    <param id="0" name="Animation">&quot;33hp&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="873345340303192">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="744241161166654" type="Meteorito">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="401523187167546" type="Meteorito" />
+                <action id="-10" name="Add to" sid="495912669568129" type="System">
+                    <param id="0" name="Variable">meteoritosDestruidos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

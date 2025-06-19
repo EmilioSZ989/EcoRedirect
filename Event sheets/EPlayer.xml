@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EPlayer</name>
+    <events>
+        <event-block sid="138370031734980">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="780710141885399" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="352761015344217" type="Player">
+                    <param id="0" name="Object">Bullet</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="785489245641933" type="Bullet">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Play" sid="737207824858789" type="Audio">
+                    <param id="0" name="Audio file">laser-312360</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="226016234987614">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="296998339001639" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="987496993982821" type="Player">
+                    <param id="0" name="X">lerp(Player.X, Mouse.X, 0.2)</param>
+                    <param id="1" name="Y">lerp(Player.Y, Mouse.Y, 0.2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="546330873839275">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="220974435304594" type="Player">
+                    <param id="0" name="Object">Meteorito</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="646304046266927" type="Player">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="942473712436045" type="Meteorito" />
+            </actions>
+        </event-block>
+        <event-block sid="409357971598009">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="133972595597284" type="Player">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="818484366593134" type="Player">
+                    <param id="0" name="Animation">&quot;vida100&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="880568376554228">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="129380164832533" type="Player">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="221089074494699" type="Player">
+                    <param id="0" name="Animation">&quot;vida75&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="673550161805770">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="113576481452755" type="Player">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="426076675782245" type="Player">
+                    <param id="0" name="Animation">&quot;vida50&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="385384132067805">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="493415819115995" type="Player">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="432408352102392" type="Player">
+                    <param id="0" name="Animation">&quot;vida25&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="601810655731503">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="733550139224537" type="Player">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="417733948022864" type="System">
+                    <param id="0" name="Layout">GameOver</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
